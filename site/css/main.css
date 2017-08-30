@@ -11,14 +11,22 @@ body {
   background-position: center;
   background-size: cover;
   display: flex;
+  flex-direction: column;
+}
 
+.main, .links {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .logo {
   height: 500px;
   width: 500px;
   position: absolute;
-  left: 300px;
+  z-index: 100;
 }
 
 .sun_flower {
@@ -28,35 +36,53 @@ body {
 
 .container {
   margin-top: 100px;
-  height: 300px;
-  width: 615px;
+  height: 400px;
+  width: 715px;
   display: flex;
   flex-direction: row;
 }
 
 .box1 {
   background-color: #9430D6;
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 400px;
 }
 
 .box2 {
   height: 100px;
   width: 0px;
-  /*background-color: #9430D6;*/
   border-left: 15px solid #7F47A4;
-  border-top: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-
+  border-top: 125px solid transparent;
+  border-bottom: 125px solid transparent;
+  filter: opacity(87%);
 }
 
 .box3 {
-  margin-top: 100px;
+  margin-top: 125px;
   height: 50px;
   width: 0px;
-  /*background-color: #9430D6;*/
   border-left: 300px solid #72448F;
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
+  filter: opacity(87%);
+}
 
+.box4 {
+  border-right: 15px solid #7F47A4;
+  border-left: none;
+}
+
+.box5 {
+  border-right: 300px solid #72448F;
+  border-left: none;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.link {
+  
 }
